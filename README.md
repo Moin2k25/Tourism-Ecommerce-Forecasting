@@ -8,7 +8,7 @@ Tourism and e-commerce both depend on good forecasts for pricing, stock and staf
 
 ## Data
 
-Two public datasets from Kaggle (not included in this repo, see links):
+Two public datasets from Kaggle (copies are included in this repo):
 
 | Sector | Dataset | What it contains |
 |---|---|---|
@@ -51,9 +51,6 @@ Two public datasets from Kaggle (not included in this repo, see links):
 - **Conversion rate rose with clicks (0.32) but fell with impressions (-0.51).** This suggests that well-targeted traffic matters more than reach.
 - **Tourism receipts moved with GDP (0.45) and arrivals (0.43).**
 
-![E-commerce model comparison](images/ecommerce_model_comparison.png)
-![Tourism forecast](images/tourism_arima_forecast.png)
-
 ## Limitations
 
 - The e-commerce dataset is synthetic, which limits how much real customer behaviour it captures. The weak classification accuracy (about 55%) reflects this.
@@ -62,19 +59,17 @@ Two public datasets from Kaggle (not included in this repo, see links):
 ## Repository structure
 
 ```
-notebooks/
-  01_data_cleaning_and_eda.ipynb
-  02_time_series_arima_prophet.ipynb
-  03_machine_learning_models.ipynb
-images/          charts used in this README
-requirements.txt
+tourism_ecommerce_forecasting.ipynb   all code: cleaning, EDA, forecasting and ML models
+synthetic_ecommerce_data.csv          e-commerce dataset
+world_tourism_economy_data.csv        tourism dataset
+requirements.txt                      Python packages needed
 ```
 
 ## How to run
 
-1. Download both datasets from the Kaggle links above and save them in a folder called `data/`.
+1. Download or clone this repository.
 2. Install the packages: `pip install -r requirements.txt`
-3. Open the notebooks in order (01, 02, 03) in Jupyter or Google Colab.
+3. Open `tourism_ecommerce_forecasting.ipynb` in Jupyter or Google Colab and run the cells from top to bottom.
 
 ## Contact
 
