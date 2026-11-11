@@ -51,6 +51,16 @@ Two public datasets from Kaggle (copies are included in this repo):
 - **Conversion rate rose with clicks (0.32) but fell with impressions (-0.51).** This suggests that well-targeted traffic matters more than reach.
 - **Tourism receipts moved with GDP (0.45) and arrivals (0.43).**
 
+### Charts
+
+**E-commerce model comparison (RMSE, MAE and MAPE)**
+
+![E-commerce model comparison](ecommerce_model_comparison.png)
+
+**Tourism receipts: ARIMA(0,2,2) five-year forecast**
+
+![Tourism forecast](tourism_arima_forecast.png)
+
 ## Limitations
 
 - The e-commerce dataset is synthetic, which limits how much real customer behaviour it captures. The weak classification accuracy (about 55%) reflects this.
@@ -63,6 +73,7 @@ tourism_ecommerce_forecasting.ipynb   all code: cleaning, EDA, forecasting and M
 synthetic_ecommerce_data.csv          e-commerce dataset
 world_tourism_economy_data.csv        tourism dataset
 requirements.txt                      Python packages needed
+*.png                                 charts used in this README
 ```
 
 ## How to run
